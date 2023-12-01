@@ -1,31 +1,34 @@
 # Analysis-on-Apple-App-Data-for-Optimal-App-Development
 Discover insights, improve features and achieve success with data-driven decisions using Apple's Application data to optimize development and create outstanding applications in a competitive landscape.
-# Mobile App Development Analysis
 
 ## Introduction
 In the fast-paced world of mobile app development, understanding user behavior and market trends is paramount to building successful projects that users will enjoy. This is a comprehensive analysis aimed at identifying the optimal strategy for developing and pricing mobile applications on Apple's platform. The project combines data from two distinct sets, one focusing on the app itself and the other on its description. Through meticulous preprocessing and feature engineering using Python, the datasets were merged, leading to a nuanced understanding of factors influencing user ratings and pricing decisions. Exploratory Data Analysis was conducted using SQL to gain insight into relationships and patterns, and the filtered dataset integrated into Power BI for data visualization and dashboard creation.
 
 ## Methodology
-1. **Data Collection:**
+1. **Packages and Tools Used:**
+   - Python (pandas) for Data Preprocessing and feature engineering
+   - SQL for EDA and Analysis
+   - PowerBI For Data visualization and dashboard creation
+2. **Data Collection:**
    - Gathered data on app features [Apple Store Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps) and descriptions [Apple Description Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps?select=appleStore_description.csv) from Kaggle.
 
-2. [**Data Preprocessing:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/AppleDataPreparation.ipynb)
+3. [**Data Preprocessing:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/AppleDataPreparation.ipynb)
    - Cleaned datasets for missing or irrelevant information.
    - Merged the two datasets for a consolidated view.
 
-3. **Feature Engineering:**
+4. **Feature Engineering:**
    - Extracted meaningful features from app descriptions.
    - Engineered new variables to enhance analysis ("Size_MB", "free_paid", "lang_num_group", "size_group", "price_group").
 
-4. **Export and Import:**
+5. **Export and Import:**
    - Exported the processed dataset to an Excel file.
    - Imported data into SQL for further exploratory data analysis.
 
-5. [**Exploratory Data Analysis (EDA):**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/Apple_Data.sql)
+6. [**Exploratory Data Analysis (EDA):**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/Apple_Data.sql)
    - Conducted queries in SQL to gain insights into relationships and patterns.
    - Exported query results as smaller Excel files for integration into Power BI.
 
-6. [**Data Visualization:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/Apple_store.pbix)
+7. [**Data Visualization:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/Apple_store.pbix)
    - Utilized Power BI for creating visually appealing and informative dashboards.
    - Illustrated trends and correlations through interactive visualizations.
 
