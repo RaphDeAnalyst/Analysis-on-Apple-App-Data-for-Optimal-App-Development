@@ -1,9 +1,25 @@
 USE apple_store;
 
+------ Exploratory Data Analysis ------
 SELECT * FROM store;
+
+-- are there missing values?
+SELECT COUNT(*) AS MissingValues
+FROM store
+WHERE id IS NULL
+
+-- what is the minimum,maximum and average rating
+SELECT MIN(user_rating) as MinRating, MAX(user_rating) as MaxRating, AVG(user_rating) as AvgRating
+FROM store;
 
 -- Getting the total number of apps in the store
 SELECT COUNT(*) AS TotalApps FROM store;
+
+--- How many Unique genre are there?
+SELECT COUNT(DISTINCT(prime_genre)) as TotalGenre 
+FROM store;
+
+------- Data Analysis -------
 
 -- Number of apps by genre
 SELECT prime_genre, COUNT(*) AS TotalApps
@@ -41,8 +57,6 @@ SELECT DISTINCT free_paid,ROUND(AVG(user_rating), 2) AS AvgRating
 FROM store
 GROUP BY free_paid;
 
-SELECT * FROM store
-
 -- Average user rating by number of supported languages
 SELECT DISTINCT lang_num_group, ROUND(AVG(user_rating), 2) AS AvgRating
 FROM store
@@ -66,27 +80,8 @@ WHERE price_group <> 'free'
 GROUP BY price_group
 ORDER BY AvgRating DESC;
 
-SELECT * FROM store
-WHERE lang_num_group = '60+'
 
--- Average user rating by content rating
-SELECT DISTINCT cont_rating, ROUND(AVG(user_rating), 2) AS AvgRating
-FROM store
-GROUP BY cont_rating
-ORDER BY AvgRating DESC;
-
-SELECT track_name, user_rating, rating_count_tot, prime_genre, ipadSc_urls_num, free_paid, price_group
-FROM store
-WHERE price_group <> '0.1-50 dollars' AND price_group <> 'free'
-ORDER BY user_rating ASC;
-
-SELECT DISTINCT price_group, COUNT(*)
-from store
-GROUP BY price_group;
-
-SELECT track_name, user_rating
-FROM store
-
+-- Average user rating by description length
 SELECT 
     CASE 
         WHEN DATALENGTH(app_desc) <500 THEN 'short'
