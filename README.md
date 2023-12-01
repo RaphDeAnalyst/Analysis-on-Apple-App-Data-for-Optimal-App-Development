@@ -7,9 +7,7 @@ In the fast-paced world of mobile app development, understanding user behavior a
 
 ## Methodology
 1. **Data Collection:**
-   - [Apple Store Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps)
-   - [Apple Description Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps?select=appleStore_description.csv)
-   - Gathered data on app features (Apple Store Source) and descriptions (Apple Description Source) from Kaggle.
+   - Gathered data on app features [Apple Store Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps) and descriptions [Apple Description Source](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps?select=appleStore_description.csv) from Kaggle.
 
 2. [**Data Preprocessing:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/AppleDataPreparation.ipynb)
    - Cleaned datasets for missing or irrelevant information.
@@ -27,7 +25,7 @@ In the fast-paced world of mobile app development, understanding user behavior a
    - Conducted queries in SQL to gain insights into relationships and patterns.
    - Exported query results as smaller Excel files for integration into Power BI.
 
-6. **Data Visualization:**
+6. [**Data Visualization:**](https://github.com/RaphDeAnalyst/Analysis-on-Apple-App-Data-for-Optimal-App-Development/blob/main/Apple_store.pbix)
    - Utilized Power BI for creating visually appealing and informative dashboards.
    - Illustrated trends and correlations through interactive visualizations.
 
